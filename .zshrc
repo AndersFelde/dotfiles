@@ -1,5 +1,6 @@
+neofetch --ascii_colors 4 4 --colors 1 7 7 4 7 7
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-neofetch | lolcat
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -42,7 +43,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
-
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
@@ -77,14 +77,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	bundler
-  	dotenv
-  	osx
-  	rake
-  	rbenv
-  	ruby	
-	)
+    git
+    dnf
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,31 +110,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.oh-my-zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #CUSTOM
-alias logout='i3exit logout'
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias diff='diff --color=auto'
-alias bat='bat --theme=ansi-dark'
-alias suspend='i3exit suspend'
-alias lastpass='sudo vim /home/kippster/Documents/etc/lastpass'
 
-export LESS_TERMCAP_mb=$'\e[1;32m'
-export LESS_TERMCAP_md=$'\e[1;32m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[01;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;4;31m'
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias vim="nvim"
 
-command -v lsd > /dev/null && alias ls='lsd --group-dirs first'
-command -v lsd > /dev/null && alias tree='lsd --tree'
-command -v bat > /dev/null && alias cat='bat --pager=never'
+command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
+command -v lsd > /dev/null && alias tree="lsd --tree"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

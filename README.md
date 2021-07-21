@@ -1,0 +1,3 @@
+```bash
+dotter deploy -v
+```

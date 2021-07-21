@@ -1,0 +1,10 @@
+active-opacity = 1;
+frame-opacity = 1;
+inactive-opacity = 0.95;
+inactive-opacity-override = false;
+
+opacity-rule = [
+    "100:name *= 'rofi'",
+    "100:name *= 'i3lock'",
+    "100:name *= '*'"
+];

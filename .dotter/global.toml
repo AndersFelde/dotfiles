@@ -1,0 +1,22 @@
+[all]
+depends = ["i3", "alacritty", "shell", "git"]
+
+[i3.files]
+dunstrc = "~/.config/dunst/dunstrc"
+rofi = "~/.config/rofi/config.rasi"
+picom = "~/.config/picom/picom.conf"
+i3 = "~/.config/i3/config"
+xinitrc = "~/.xinitrc"
+
+[alacritty.files]
+alacritty = "~/.config/alacritty/alacritty.yml"
+
+[shell.files]
+tmux = "~/.tmux.conf"
+zshrc = "~/.zshrc"
+vimrc = "~/.vimrc"
+p10k = "~/.p10k.zsh"
+neofetch = "~/.config/neofetch/config.conf"
+
+[git.files]
+gitconfig = "~/.gitconfig"

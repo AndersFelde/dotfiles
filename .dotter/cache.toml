@@ -1,0 +1,15 @@
+[symlinks]
+alacritty = "/home/kippster/.config/alacritty/alacritty.yml"
+dunstrc = "/home/kippster/.config/dunst/dunstrc"
+gitconfig = "/home/kippster/.gitconfig"
+i3 = "/home/kippster/.config/i3/config"
+neofetch = "/home/kippster/.config/neofetch/config.conf"
+p10k = "/home/kippster/.p10k.zsh"
+picom = "/home/kippster/.config/picom/picom.conf"
+rofi = "/home/kippster/.config/rofi/config.rasi"
+tmux = "/home/kippster/.tmux.conf"
+vimrc = "/home/kippster/.vimrc"
+xinitrc = "/home/kippster/.xinitrc"
+zshrc = "/home/kippster/.zshrc"
+
+[templates]

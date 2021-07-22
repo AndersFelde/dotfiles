@@ -7,7 +7,7 @@ rofi = "~/.config/rofi/config.rasi"
 picom = "~/.config/picom/picom.conf"
 i3 = "~/.config/i3/config"
 xinitrc = "~/.xinitrc"
-dconf = "~/dconf/user"
+# dconf = "~/dconf/user"
 
 [alacritty.files]
 alacritty = "~/.config/alacritty/alacritty.yml"

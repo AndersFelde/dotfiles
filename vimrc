@@ -9,7 +9,7 @@ set expandtab
 
 call plug#begin()
 Plug 'preservim/NERDTree'
-Plug 'neoclide/coc.vim', {'branch': 'release'}
+"Plug 'neoclide/coc.vim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'https://github.com/itchyny/vim-gitbranch'
 call plug#end()

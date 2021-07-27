@@ -124,7 +124,7 @@ alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias vim="nvim"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
-alias suspend="/usr/bin/i3lock-solarized-dark.sh & systemctl suspend"
+alias Suspend="/usr/bin/i3lock-solarized-dark.sh & systemctl suspend"
 
 command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
 command -v lsd > /dev/null && alias tree="lsd --tree"

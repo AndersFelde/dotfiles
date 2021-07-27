@@ -35,5 +35,7 @@ xautolock -time 5 -locker "/usr/bin/i3lock-solarized-dark.sh" -killtime 20 -kill
 setxkbmap -option caps:escape &
 /usr/bin/dunst &
 batsignal -w 20 -c 15 -d 10 -W "Charge maybe?" -C "Should charge" -D "/usr/bin/xbacklight -set 10" -I "/usr/share/icons/Papirus-Dark/16x16/devices/battery.svg" &
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' #for burpsuite blant annet
+
 # rclone mount "OneDrive": /home/kippster/skole/OneDrive --vfs-cache-mode writes --cache-dir /home/kippster/.cache/rclone --log-level INFO --log-file /home/kippster/.log/rclone.log &
 exec i3

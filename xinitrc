@@ -27,15 +27,17 @@ fi
 setxkbmap no
 killall bgchd
 mons --primary DP-2
-mons -e right 
+mons -e right
 bgchd -dir /home/kippster/Pictures/Wallpaper/ -intv 15m -bcknd feh &
 guake &
 picom --config /home/kippster/.config/picom/picom.conf &
-xautolock -time 5 -locker "/usr/bin/i3lock-solarized-dark.sh" -killtime 20 -killer "systemctl suspend" -detectsleep &
+xautolock -time 5 -locker "/usr/bin/i3lock-solarized-dark.sh" -killtime 10 -killer "xset dpms force standby" -detectsleep &
 setxkbmap -option caps:escape &
 /usr/bin/dunst &
 batsignal -w 20 -c 15 -d 10 -W "Charge maybe?" -C "Should charge" -D "/usr/bin/xbacklight -set 10" -I "/usr/share/icons/Papirus-Dark/16x16/devices/battery.svg" &
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' #for burpsuite blant annet
+# killall xscreensaver
+# xscreensaver -nosplash &
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' & #for burpsuite blant annet 
 
 # rclone mount "OneDrive": /home/kippster/skole/OneDrive --vfs-cache-mode writes --cache-dir /home/kippster/.cache/rclone --log-level INFO --log-file /home/kippster/.log/rclone.log &
 exec i3

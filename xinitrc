@@ -34,7 +34,8 @@ picom --config /home/kippster/.config/picom/picom.conf &
 xautolock -time 5 -locker "/usr/bin/i3lock-solarized-dark.sh" -killtime 10 -killer "xset dpms force standby" -detectsleep &
 setxkbmap -option caps:escape &
 /usr/bin/dunst &
-batsignal -w 20 -c 15 -d 10 -W "Charge maybe?" -C "Should charge" -D "/usr/bin/xbacklight -set 10" -I "/usr/share/icons/Papirus-Dark/16x16/devices/battery.svg" &
+xinput --set-prop 13 'libinput Accel Speed' -0.6 & #for mus
+# batsignal -w 20 -c 15 -d 10 -W "Charge maybe?" -C "Should charge" -D "/usr/bin/xbacklight -set 10" -I "/usr/share/icons/Papirus-Dark/16x16/devices/battery.svg" &
 # killall xscreensaver
 # xscreensaver -nosplash &
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' & #for burpsuite blant annet 

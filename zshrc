@@ -119,6 +119,7 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.utf8
 export LANG=en_US.UTF-8
+export SUDO_EDITOR=nvim
 
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"

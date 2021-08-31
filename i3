@@ -170,10 +170,12 @@ bindsym $mod+r mode "resize"
 
 #CUSTOM
 
-bindsym $mod+d exec --no-startup-id rofi -show drun -modi drun -font "MesloLGS NF Regular 14" -show-icons
+# bindsym $mod+d exec --no-startup-id rofi -show drun -modi drun -font "MesloLGS NF Regular 14" -show-icons
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/bin/launcher_colorful
 bindsym Control+Mod1+Left workspace prev
 bindsym Control+Mod1+Right workspace next
-bindsym Mod1+Tab exec --no-startup-id rofi -show window -font "MesloLGS NF Regular 14" -show-icons
+# bindsym Mod1+Tab exec --no-startup-id rofi -show window -font "MesloLGS NF Regular 14" -show-icons
+bindsym Mod1+Tab exec --no-startup-id ~/.config/rofi/bin/launcher_misc
 bindsym $mod+l exec --no-startup-id /usr/bin/i3lock-solarized-dark.sh
 bindsym $mod+p exec --no-startup-id scrot ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png | notify-send "Image saved to ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png" -a scrot
 bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png

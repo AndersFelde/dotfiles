@@ -181,6 +181,7 @@ bindsym $mod+p exec --no-startup-id scrot ~/Pictures/screenshots/%Y-%m-%d-%T-scr
 bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 bindsym $mod+q exec --no-startup-id pkill
 bindsym $mod+Shift+q exec --no-startup-id killwindow
+bindsym Control+space exec --no-startup-id dunstctl close
 
 
 # exec --no-startup-id picom --config /home/kippster/.config/picom/picom.conf

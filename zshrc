@@ -182,3 +182,5 @@ fzf-cd-widget() {
 }
 zle     -N    fzf-cd-widget
 bindkey '^f' fzf-cd-widget
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"

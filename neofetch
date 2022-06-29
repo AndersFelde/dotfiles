@@ -13,15 +13,15 @@ print_info() {
     info "WM" wm
     info "Terminal" term
     info "CPU" cpu
-    prin "GPU" "NVIDIA GeForce MX250"
-    # info "GPU" gpu
+    # prin "GPU" "NVIDIA GeForce MX250"
+    info "GPU" gpu
     info "Memory" memory
     info "Local IP" local_ip
     #info "Public IP" public_ip
 
     # info "GPU Driver" gpu_driver  # Linux/macOS only
     # info "CPU Usage" cpu_usage
-    # info "Disk" disk
+    info "Disk" disk
     # info "Battery" battery
     # info "Font" font
     # info "Song" song

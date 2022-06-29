@@ -120,6 +120,8 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.utf8
 export LANG=en_US.UTF-8
 export SUDO_EDITOR=nvim
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export PATH="$PATH:/home/kippster/.local/bin/"
 
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
@@ -183,4 +185,4 @@ fzf-cd-widget() {
 zle     -N    fzf-cd-widget
 bindkey '^f' fzf-cd-widget
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+

@@ -81,6 +81,8 @@ plugins=(
     dnf
     zsh-syntax-highlighting
     zsh-autosuggestions
+    dirhistory
+    web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,12 +123,13 @@ export LC_ALL=en_US.utf8
 export LANG=en_US.UTF-8
 export SUDO_EDITOR=nvim
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export PATH="$PATH:/home/kippster/.local/bin/"
+export PATH="$PATH:$HOME/.local/bin/"
 
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias vim="nvim"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+alias minicom="minicom -con"
 
 command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
 command -v lsd > /dev/null && alias tree="lsd --tree"
@@ -184,5 +187,3 @@ fzf-cd-widget() {
 }
 zle     -N    fzf-cd-widget
 bindkey '^f' fzf-cd-widget
-
-

@@ -1,6 +1,9 @@
 [all]
 depends = ["i3", "alacritty", "shell", "git"]
 
+[wsl]
+depends = ["shell", "git"]
+
 [i3.files]
 dunstrc = "~/.config/dunst/dunstrc"
 picom = "~/.config/picom/picom.conf"
@@ -11,12 +14,19 @@ xinitrc = "~/.xinitrc"
 [alacritty.files]
 alacritty = "~/.config/alacritty/alacritty.yml"
 
+[shell]
+depends = ["neofetch"]
+
 [shell.files]
 tmux = "~/.tmux.conf"
 zshrc = "~/.zshrc"
 vimrc = "~/.vimrc"
 p10k = "~/.p10k.zsh"
 neofetch = "~/.config/neofetch/config.conf"
+
+[neofetch.variables]
+packages = false
+battery = true
 
 [git.files]
 gitconfig = "~/.gitconfig"

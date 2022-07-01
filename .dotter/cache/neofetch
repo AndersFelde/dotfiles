@@ -8,7 +8,7 @@ print_info() {
     info "Host" model
     info "Kernel" kernel
     info "Uptime" uptime
-    {{#if packages}}info "Packages" packages{{/if}}
+    
     info "Shell" shell
     info "WM" wm
     info "Terminal" term
@@ -22,7 +22,7 @@ print_info() {
     # info "GPU Driver" gpu_driver  # Linux/macOS only
     # info "CPU Usage" cpu_usage
     info "Disk" disk
-    {{#if battery}}info "Battery" battery{{/if}}
+    info "Battery" battery
     # info "Font" font
     # info "Song" song
     # [[ "$player" ]] && prin "Music Player" "$player"

@@ -1,7 +1,7 @@
 [all]
 depends = ["i3", "alacritty", "shell", "git"]
 
-[wsl]
+[terminal]
 depends = ["shell", "git"]
 
 [i3.files]

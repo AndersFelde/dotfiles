@@ -4,9 +4,11 @@ depends = ["i3", "alacritty", "shell", "git", "font"]
 [terminal]
 depends = ["shell", "git"]
 
+[picom.files]
+picom = "~/.config/picom/picom.conf"
+
 [i3.files]
 dunstrc = "~/.config/dunst/dunstrc"
-picom = "~/.config/picom/picom.conf"
 i3 = "~/.config/i3/config"
 xinitrc = "~/.xinitrc"
 # dconf = "~/dconf/user"

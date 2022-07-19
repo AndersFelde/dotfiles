@@ -1,5 +1,5 @@
 [all]
-depends = ["i3", "alacritty", "shell", "git"]
+depends = ["i3", "alacritty", "shell", "git", "font"]
 
 [terminal]
 depends = ["shell", "git"]
@@ -30,3 +30,10 @@ battery = true
 
 [git.files]
 gitconfig = "~/.gitconfig"
+
+[font.files]
+# Krever at MS fonts er installert
+fontconfig = "~/.config/fontconfig/fonts.conf"
+
+[gtk3.files]
+gtk3 = "~/.config/gtk-3.0/settings.ini"

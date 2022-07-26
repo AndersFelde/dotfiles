@@ -7,8 +7,10 @@ depends = ["shell", "git"]
 [picom.files]
 picom = "~/.config/picom/picom.conf"
 
-[i3.files]
+[dunst.files]
 dunstrc = "~/.config/dunst/dunstrc"
+
+[i3.files]
 i3 = "~/.config/i3/config"
 xinitrc = "~/.xinitrc"
 # dconf = "~/dconf/user"

@@ -31,6 +31,7 @@ neofetch = "~/.config/neofetch/config.conf"
 [neofetch.variables]
 packages = false
 battery = true
+arch_colors = false
 
 [git.files]
 gitconfig = "~/.gitconfig"

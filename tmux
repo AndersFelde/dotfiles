@@ -1,4 +1,5 @@
 set -g default-terminal "alacritty"
+set -g mouse on
 
 # remap prefix from 'C-b' to 'C-a'
 unbind C-b

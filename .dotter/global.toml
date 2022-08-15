@@ -42,3 +42,7 @@ fontconfig = "~/.config/fontconfig/fonts.conf"
 
 [gtk3.files]
 gtk3 = "~/.config/gtk-3.0/settings.ini"
+
+[touchegg.files]
+touchegg = "~/.config/touchegg/touchegg.conf"
+

@@ -1,8 +1,11 @@
 [all]
-depends = ["i3", "alacritty", "shell", "git", "font"]
+depends = ["desktop", "terminal"]
 
 [terminal]
 depends = ["shell", "git"]
+
+[desktop]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot"]
 
 [picom.files]
 picom = "~/.config/picom/picom.conf"
@@ -26,12 +29,14 @@ tmux = "~/.tmux.conf"
 zshrc = "~/.zshrc"
 vimrc = "~/.vimrc"
 p10k = "~/.p10k.zsh"
-neofetch = "~/.config/neofetch/config.conf"
 
 [neofetch.variables]
 packages = false
 battery = true
 arch_colors = false
+
+[neofetch.files]
+neofetch = "~/.config/neofetch/config.conf"
 
 [git.files]
 gitconfig = "~/.gitconfig"
@@ -46,3 +51,5 @@ gtk3 = "~/.config/gtk-3.0/settings.ini"
 [touchegg.files]
 touchegg = "~/.config/touchegg/touchegg.conf"
 
+[flameshot.files]
+flameshot = "~/.config/flameshot/flameshot.ini"

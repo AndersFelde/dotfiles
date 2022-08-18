@@ -43,6 +43,9 @@ command -v lsd > /dev/null && alias tree="lsd --tree"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+#zoxide
+eval "$(zoxide init zsh)"
+
 
 # CTRL-T - Paste the selected file path(s) into the command line
 __fsel() {

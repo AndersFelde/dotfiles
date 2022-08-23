@@ -37,6 +37,7 @@ alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias minicom="minicom -con"
 alias qtile_log="cat ~/.local/share/qtile/qtile.log"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias compile_asm='gcc -S -fno-asynchronous-unwind-tables'
 
 command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
 command -v lsd > /dev/null && alias tree="lsd --tree"

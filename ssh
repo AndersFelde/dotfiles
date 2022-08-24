@@ -1,0 +1,13 @@
+Host github.com
+	IdentityFile ~/.ssh/github
+    IPQoS=throughput
+
+Host gitlab.com
+	IdentityFile ~/.ssh/gitlab
+    IPQoS=throughput
+
+Host tekutv
+    HostName cissky.net
+    User tekutv
+	IdentityFile ~/.ssh/id_rsa
+    IPQoS=throughput

@@ -5,7 +5,7 @@ depends = ["desktop", "terminal"]
 depends = ["shell", "git"]
 
 [desktop]
-depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot"]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh"]
 
 [picom.files]
 picom = "~/.config/picom/picom.conf"
@@ -53,3 +53,6 @@ touchegg = "~/.config/touchegg/touchegg.conf"
 
 [flameshot.files]
 flameshot = "~/.config/flameshot/flameshot.ini"
+
+[ssh.files]
+ssh = "~/.ssh/config"

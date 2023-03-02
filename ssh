@@ -16,3 +16,8 @@ Host ntnu
     HostName 10.212.138.204
     User ubuntu
     IdentityFile ~/.ssh/ntnu
+
+Host cybertalent
+    HostName ctf.cybertalent.no
+    User login
+    IdentityFile ~/.ssh/id_rsa

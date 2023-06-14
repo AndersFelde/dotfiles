@@ -1,66 +1,62 @@
-<?xml version="1.0"?>
-<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'urn:fontconfig:fonts.dtd'>
 <fontconfig>
-   <description>Kippster font config</description>
-   <match target="pattern">
-      <test qual="any" name="family" compare="eq">
-         <string>sans-serif</string>
-      </test>
-      <edit name="family" mode="assign" binding="same">
-         <string>Arial</string>
-      </edit>
-   </match>
-   <match target="pattern">
-      <test qual="any" name="family" compare="eq">
-         <string>serif</string>
-      </test>
-      <edit name="family" mode="assign" binding="same">
-         <string>Timew New Roman</string>
-      </edit>
-   </match>
-   <match target="pattern">
-      <test qual="any" name="family" compare="eq">
-         <string>monospace</string>
-      </test>
-      <edit name="family" mode="assign" binding="same">
-         <string>Courier New</string>
-      </edit>
-   </match>
-   <match target="pattern">
-      <test qual="any" name="family" compare="eq">
-         <string>system-ui</string>
-      </test>
-      <edit name="family" mode="assign" binding="same">
-         <family>Segoe UI</family>
-      </edit>
-   </match>
-   <alias>
-      <family>sans-serif</family>
-      <prefer>
-         <family>Arial</family>
-      </prefer>
-   </alias>
-
-   <alias>
-      <family>serif</family>
-      <prefer>
-         <family>Times New Roman</family>
-      </prefer>
-   </alias>
-
-   <alias>
-      <family>monospace</family>
-      <prefer>
-         <family>Courier New</family>
-      </prefer>
-   </alias>
-
-   <alias>
-      <family>system-ui</family>
-      <prefer>
-         <family>Segoe UI</family>
-      </prefer>
-   </alias>
-
-
+ <description>Kippster font config</description>
+ <match target="pattern">
+  <test qual="any" compare="eq" name="family">
+   <string>sans-serif</string>
+  </test>
+  <edit name="family" mode="assign" binding="same">
+   <string>Arial</string>
+  </edit>
+ </match>
+ <match target="pattern">
+  <test qual="any" compare="eq" name="family">
+   <string>serif</string>
+  </test>
+  <edit name="family" mode="assign" binding="same">
+   <string>Timew New Roman</string>
+  </edit>
+ </match>
+ <match target="pattern">
+  <test qual="any" compare="eq" name="family">
+   <string>monospace</string>
+  </test>
+  <edit name="family" mode="assign" binding="same">
+   <string>Courier New</string>
+  </edit>
+ </match>
+ <match target="pattern">
+  <test qual="any" compare="eq" name="family">
+   <string>system-ui</string>
+  </test>
+  <edit name="family" mode="assign" binding="same">
+   <family>Segoe UI</family>
+  </edit>
+ </match>
+ <alias>
+  <family>sans-serif</family>
+  <prefer>
+   <family>Arial</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>serif</family>
+  <prefer>
+   <family>Times New Roman</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>monospace</family>
+  <prefer>
+   <family>Courier New</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>system-ui</family>
+  <prefer>
+   <family>Segoe UI</family>
+  </prefer>
+ </alias>
+ <dir>~/.fonts</dir>
 </fontconfig>

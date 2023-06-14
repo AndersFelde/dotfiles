@@ -30,6 +30,7 @@ export SUDO_EDITOR=lvim
 export EDITOR=lvim
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export PATH="$PATH:$HOME/.local/bin/"
+export BROWSER=brave
 
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"

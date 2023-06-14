@@ -21,3 +21,8 @@ Host cybertalent
     HostName ctf.cybertalent.no
     User login
     IdentityFile ~/.ssh/id_rsa
+
+Host pwncollege
+    HostName dojo.pwn.college
+    User hacker
+    IdentityFile ~/.ssh/pwncollege

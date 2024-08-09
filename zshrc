@@ -1,4 +1,4 @@
-neofetch {{#if arch_colors}}--ascii_colors 4 4 4 4 4 4 --colors 4 1 1 4 7 7{{/if}}
+neofetch --ascii_colors 4 4 4 4 4 4 --colors 4 1 1 4 7 7
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -28,7 +28,7 @@ export LC_ALL=en_US.utf8
 export LANG=en_US.UTF-8
 export SUDO_EDITOR=lvim
 export EDITOR=lvim
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export PATH="$PATH:$HOME/.local/bin/"
 export BROWSER=brave
 

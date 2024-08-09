@@ -8,13 +8,13 @@
 
 print_info() {
     prin "┌─────────\n Hardware Information \n─────────┐"
-    info " ​ ​  " model
-    info " ​ ​  " cpu
-    info " ​ ​ ﬙ " gpu
+    info " ​ ​ 󰌢 " model
+    info " ​ ​  " cpu
+    info " ​ ​ 󰻠 " gpu
     info " ​ ​  " disk
-    info " ​ ​ 塞" memory
+    info " ​ ​ " memory
     # info " ​ ​  " resolution
-    {{#if battery}}info " ​ ​ " battery{{/if}}
+    {{#if battery}}info " ​ ​ " battery{{/if}}
      
     prin "├─────────\n Software Information \n─────────┤"
 #    info " ​ ​  " users
@@ -30,7 +30,7 @@ print_info() {
 #    info " ​ ​   " theme
 #    info " ​ ​   " icons
     {{#if packages}}info " ​ ​  " packages{{/if}}
-    info " ​ ​ 羽 " uptime
+    info " ​ ​  " uptime
 #    info " ​ ​   " gpu_driver  # Linux/macOS only
 #    info " ​ ​  " cpu_usage
 #    info " ​ ​ ﱘ " song

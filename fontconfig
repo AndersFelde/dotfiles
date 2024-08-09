@@ -2,54 +2,51 @@
 <!DOCTYPE fontconfig SYSTEM 'urn:fontconfig:fonts.dtd'>
 <fontconfig>
  <description>Kippster font config</description>
- <match target="pattern">
-  <test qual="any" compare="eq" name="family">
-   <string>sans-serif</string>
-  </test>
-  <edit name="family" mode="assign" binding="same">
-   <string>Arial</string>
-  </edit>
- </match>
- <match target="pattern">
-  <test qual="any" compare="eq" name="family">
-   <string>serif</string>
-  </test>
-  <edit name="family" mode="assign" binding="same">
-   <string>Timew New Roman</string>
-  </edit>
- </match>
- <match target="pattern">
-  <test qual="any" compare="eq" name="family">
-   <string>monospace</string>
-  </test>
-  <edit name="family" mode="assign" binding="same">
-   <string>Courier New</string>
-  </edit>
- </match>
- <match target="pattern">
-  <test qual="any" compare="eq" name="family">
-   <string>system-ui</string>
-  </test>
-  <edit name="family" mode="assign" binding="same">
-   <family>Segoe UI</family>
-  </edit>
- </match>
+  <match target="font">
+    <edit name="antialias" mode="assign">
+      <bool>true</bool>
+    </edit>
+    <edit name="hinting" mode="assign">
+      <bool>true</bool>
+    </edit>
+    <edit name="rgba" mode="assign">
+      <const>rgb</const>
+    </edit>
+    <edit name="hintstyle" mode="assign">
+      <const>hintslight</const>
+    </edit>
+    <edit name="lcdfilter" mode="assign">
+      <const>lcddefault</const>
+    </edit>
+  </match>
  <alias>
   <family>sans-serif</family>
   <prefer>
-   <family>Arial</family>
+   <family>Noto Sans</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>sans</family>
+  <prefer>
+   <family>Noto Sans</family>
   </prefer>
  </alias>
  <alias>
   <family>serif</family>
   <prefer>
-   <family>Times New Roman</family>
+   <family>Noto Serif</family>
   </prefer>
  </alias>
  <alias>
   <family>monospace</family>
   <prefer>
-   <family>Courier New</family>
+   <family>Noto Mono</family>
+  </prefer>
+ </alias>
+ <alias>
+  <family>mono</family>
+  <prefer>
+   <family>Noto Mono</family>
   </prefer>
  </alias>
  <alias>
@@ -58,5 +55,10 @@
    <family>Segoe UI</family>
   </prefer>
  </alias>
- <dir>~/.fonts</dir>
+ <alias>
+  <family>CaskaydiaCove NF</family>
+  <prefer>
+   <family>CaskaydiaCove Nerd Font</family>
+  </prefer>
+ </alias>
 </fontconfig>

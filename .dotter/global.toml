@@ -5,7 +5,10 @@ depends = ["desktop", "terminal"]
 depends = ["shell", "git"]
 
 [desktop]
-depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh"]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd"]
+
+[xsettingsd.files]
+xsettingsd = "~/.config/xsettingsd/xsettingsd.conf"
 
 [picom.files]
 picom = "~/.config/picom/picom.conf"

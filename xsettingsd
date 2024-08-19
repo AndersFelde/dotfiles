@@ -4,3 +4,5 @@ Xft/Hinting     1
 Xft/HintStyle   "hintfull"
 Xft/lcdfilter   "lcddefault"
 Xft/RGBA        "rgb"
+Net/ThemeName "Arc-Dark"
+Net/IconThemeName "Papirus-Dark"

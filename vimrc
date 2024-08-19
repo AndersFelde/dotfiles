@@ -6,6 +6,10 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+map J 5j
+map K 5k
+map H b
+map L w
 
 " call plug#begin()
 " Plug 'preservim/NERDTree'

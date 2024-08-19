@@ -40,6 +40,8 @@ alias minicom="minicom -con"
 alias qtile_log="cat ~/.local/share/qtile/qtile.log"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias compile_asm='gcc -S -fno-asynchronous-unwind-tables'
+alias ghidra_auto='python /opt/013brumm-tools/pwn/ghidra/auto_ghidra.py'
+alias auto_ghidra='python /opt/013brumm-tools/pwn/ghidra/auto_ghidra.py'
 
 command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
 command -v lsd > /dev/null && alias tree="lsd --tree"

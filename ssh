@@ -27,3 +27,7 @@ Host pwncollege
   HostName dojo.pwn.college
   User hacker
   IdentityFile ~/.ssh/pwncollege
+
+Host gitlab.cybertalent.no
+	IdentityFile ~/.ssh/gitlab_tpc
+  IPQoS=throughput

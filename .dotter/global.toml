@@ -5,7 +5,7 @@ depends = ["desktop", "terminal"]
 depends = ["shell", "git"]
 
 [desktop]
-depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd"]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord"]
 
 [xsettingsd.files]
 xsettingsd = "~/.config/xsettingsd/xsettingsd.conf"
@@ -59,3 +59,6 @@ flameshot = "~/.config/flameshot/flameshot.ini"
 
 [ssh.files]
 ssh = "~/.ssh/config"
+
+[discord.files]
+discord = "~/.config/discord/settings.json"

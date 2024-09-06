@@ -10,7 +10,7 @@ Host gitlab.com
 Host tekutv
   HostName sky-net.no
   User tekutv
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_ed25519
   IPQoS=throughput
 
 Host ntnu

@@ -1,3 +1,12 @@
+Host dockerhost.cybertalent.no
+  HostName dockerhost.cybertalent.no
+  User xadmin
+
+Host pwnbox
+  HostName 192.168.10.10
+  IdentityFile ~/.ssh/id_ed25519
+  User winnie
+
 Host github.com
 	IdentityFile ~/.ssh/github
   IPQoS=throughput
@@ -31,3 +40,21 @@ Host pwncollege
 Host gitlab.cybertalent.no
 	IdentityFile ~/.ssh/gitlab_tpc
   IPQoS=throughput
+
+Host qemu
+        Port 10023
+        HostName 127.0.0.1
+        IdentityFile /home/kippster/code/cybersec/android/kurs/labs/qemu_id_rsa
+        StrictHostKeyChecking no
+        User root
+Host qemu-shell
+        Port 10023
+        HostName 127.0.0.1
+        IdentityFile /home/kippster/code/cybersec/android/kurs/labs/qemu_id_rsa
+        StrictHostKeyChecking no
+        User shell
+
+Host equinor
+  User kali
+  HostName w1nn13th3pwn-3efd-eptbox.eptc.tf
+  IdentityFile /home/kippster/hack/ept24/eptbox-id_ed25519

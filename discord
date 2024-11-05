@@ -1,5 +1,4 @@
 {
- "SKIP_HOST_UPDATE": true
   "chromiumSwitches": {},
   "IS_MAXIMIZED": false,
   "IS_MINIMIZED": false,
@@ -8,5 +7,5 @@
     "y": 60,
     "width": 1900,
     "height": 1130
-  },
+  }
 }

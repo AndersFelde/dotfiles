@@ -1,0 +1,4 @@
+packages = ["shell"]
+
+[variables]
+arch_colors = true

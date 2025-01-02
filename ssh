@@ -1,0 +1,54 @@
+Host pwnbox
+  HostName 192.168.10.10
+  IdentityFile ~/.ssh/id_ed25519
+  User winnie
+
+Host github.com
+	IdentityFile ~/.ssh/github
+  IPQoS=throughput
+
+Host gitlab.com
+	IdentityFile ~/.ssh/gitlab
+  IPQoS=throughput
+  TCPKeepAlive=true
+
+Host tekutv
+  HostName sky-net.no
+  User tekutv
+  IdentityFile ~/.ssh/id_ed25519
+  IPQoS=throughput
+
+Host ntnu
+  HostName 10.212.138.204
+  User ubuntu
+  IdentityFile ~/.ssh/ntnu
+
+Host cybertalent
+  HostName ctf.cybertalent.no
+  User login
+  IdentityFile ~/.ssh/id_rsa
+
+Host pwncollege
+  HostName dojo.pwn.college
+  User hacker
+  IdentityFile ~/.ssh/pwncollege
+
+
+Host qemu
+        Port 10023
+        HostName 127.0.0.1
+        IdentityFile /home/kippster/code/cybersec/android/kurs/labs/qemu_id_rsa
+        StrictHostKeyChecking no
+        User root
+Host qemu-shell
+        Port 10023
+        HostName 127.0.0.1
+        IdentityFile /home/kippster/code/cybersec/android/kurs/labs/qemu_id_rsa
+        StrictHostKeyChecking no
+        User shell
+
+Host equinor
+  User kali
+  HostName w1nn13th3pwn-3efd-eptbox.eptc.tf
+  IdentityFile /home/kippster/hack/ept24/eptbox-id_ed25519
+

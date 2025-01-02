@@ -1,0 +1,48 @@
+[colors.bright]
+black = "#444444"
+blue = "#0092ff"
+cyan = "#67fff0"
+green = "#abe15b"
+magenta = "#9a5feb"
+red = "#ff2740"
+white = "#ffffff"
+yellow = "#ffd242"
+
+[colors.normal]
+black = "#232323"
+blue = "#008df8"
+cyan = "#00d8eb"
+green = "#8ce10b"
+magenta = "#6243a6"
+red = "#ff000f"
+white = "#ffffff"
+yellow = "#ffb900"
+
+[colors.primary]
+background = "#0e1019"
+foreground = "#EBEBEB"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+
+[font.bold]
+family = "CaskaydiaCove NF"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaCove NF"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaCove NF"
+style = "Regular"
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window.padding]
+x = 10
+y = 10

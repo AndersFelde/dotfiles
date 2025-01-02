@@ -1,0 +1,64 @@
+[all]
+depends = ["desktop", "terminal"]
+
+[terminal]
+depends = ["shell", "git"]
+
+[desktop]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord"]
+
+[xsettingsd.files]
+xsettingsd = "~/.config/xsettingsd/xsettingsd.conf"
+
+[picom.files]
+picom = "~/.config/picom/picom.conf"
+
+[dunst.files]
+dunstrc = "~/.config/dunst/dunstrc"
+
+[i3.files]
+i3 = "~/.config/i3/config"
+xinitrc = "~/.xinitrc"
+# dconf = "~/dconf/user"
+
+[alacritty.files]
+alacritty = "~/.config/alacritty/alacritty.toml"
+
+[shell]
+depends = ["neofetch"]
+
+[shell.files]
+tmux = "~/.tmux.conf"
+zshrc = "~/.zshrc"
+vimrc = "~/.vimrc"
+p10k = "~/.p10k.zsh"
+
+[neofetch.variables]
+packages = false
+battery = true
+arch_colors = false
+
+[neofetch.files]
+neofetch = "~/.config/neofetch/config.conf"
+
+[git.files]
+gitconfig = "~/.gitconfig"
+
+[font.files]
+# Krever at MS fonts er installert
+fontconfig = "~/.config/fontconfig/fonts.conf"
+
+[gtk3.files]
+gtk3 = "~/.config/gtk-3.0/settings.ini"
+
+[touchegg.files]
+touchegg = "~/.config/touchegg/touchegg.conf"
+
+[flameshot.files]
+flameshot = "~/.config/flameshot/flameshot.ini"
+
+[ssh.files]
+ssh = "~/.ssh/config"
+
+[discord.files]
+discord = "~/.config/discord/settings.json"

@@ -1,0 +1,10 @@
+[General]
+checkForUpdates=false
+contrastOpacity=127
+copyPathAfterSave=true
+disabledTrayIcon=true
+drawColor=#ff0000
+drawThickness=6
+savePath=/home/kippster/Pictures
+showDesktopNotification=false
+showHelp=false

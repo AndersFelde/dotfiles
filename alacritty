@@ -40,9 +40,11 @@ style = "Italic"
 family = "CaskaydiaCove NF"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
 
 [window.padding]
 x = 10
 y = 10
+
+[terminal]

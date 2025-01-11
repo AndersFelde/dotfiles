@@ -2,10 +2,10 @@
 depends = ["desktop", "terminal"]
 
 [terminal]
-depends = ["shell", "git"]
+depends = ["shell"]
 
 [desktop]
-depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord"]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord", "xinitrc"]
 
 [xsettingsd.files]
 xsettingsd = "~/.config/xsettingsd/xsettingsd.conf"
@@ -18,8 +18,11 @@ dunstrc = "~/.config/dunst/dunstrc"
 
 [i3.files]
 i3 = "~/.config/i3/config"
-xinitrc = "~/.xinitrc"
+xinitrc_i3 = "~/.xinitrc"
 # dconf = "~/dconf/user"
+
+[xinitrc.files]
+xinitrc = "~/.xinitrc"
 
 [alacritty.files]
 alacritty = "~/.config/alacritty/alacritty.toml"
@@ -41,8 +44,8 @@ arch_colors = false
 [neofetch.files]
 neofetch = "~/.config/neofetch/config.conf"
 
-[git.files]
-gitconfig = "~/.gitconfig"
+# [git.files]
+# gitconfig = "~/.gitconfig"
 
 [font.files]
 # Krever at MS fonts er installert

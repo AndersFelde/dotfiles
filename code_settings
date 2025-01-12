@@ -1,0 +1,941 @@
+{
+    //vscode
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.autoSave": "afterDelay",
+    "debug.onTaskErrors": "debugAnyway",
+    "terminal.external.windowsExec": "wt.exe",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Arch (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Arch"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+    //gie
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "gitlab.showMrStatusOnStatusBar": false,
+    "gitlab.showPipelineUpdateNotifications": true,
+    //neovim
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Neovim\\bin\\nvim.exe",
+    //Random
+    "workbench.list.automaticKeyboardNavigation": false,
+    "python.languageServer": "Pylance",
+    "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+        "editor.defaultFormatter": "monosans.djlint"
+    },
+    "python.analysis.typeCheckingMode": "off",
+    "projectManager.git.baseFolders": [
+        "C:\\Users\\kippster\\Desktop",
+        "\\\\wsl.localhost\\Arch\\home\\kippster\\code",
+        "\\\\wsl.localhost\\Arch\\home\\kippster\\hack",
+        "/home/kippster/hack",
+        "/home/kippster/code",
+        "/home/kippster/.config"
+    ],
+    "remote.extensionKind": {
+        "alefragnani.project-manager": [
+            "workspace"
+        ]
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "remote.SSH.remotePlatform": {
+        "cissky.net": "linux",
+        "192.168.0.69": "linux",
+        "192.168.10.101": "linux"
+    },
+    "editor.fontLigatures": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    // "[c]": {
+    //     "editor.defaultFormatter": "xaver.clang-format"
+    // },
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/kippster/.confg/nvim/code/init.vim",
+    "errorLens.gutterIconsEnabled": true,
+    "python.formatting.blackArgs": [
+        "--experimental-string-processing"
+    ],
+    "cSpell.language": "en,nb-NO",
+    "cSpell.userWords": [
+        "gruntfile",
+        "portainer"
+    ],
+    "sync.gist": "7a305b8f136fbef7a9e9aa828aec034a",
+    "sync.autoUpload": true,
+    "sync.forceUpload": true,
+    "sync.quietSync": true,
+    // "ignoreUploadFolders": [
+    //     "workspaceStorage",
+    //     "globalStorage",
+    //     "sync",
+    //     "History"
+    // ],
+    //---VIM---
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf",
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.leader": ",", //conflic easymotion whichKey
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-n>": false
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "<C-w>"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<shift+tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "j",
+                "j",
+                "j",
+                "j",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "k",
+                "k",
+                "k",
+                "k",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<tab>",
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<shift+tab>",
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    // "whichkey.sortOrder": "alphabetically",
+    "whichkey.bindingOverrides": [
+        {
+            "keys": "f.F",
+            "name": "Open Folder",
+            "type": "command",
+            "command": "workbench.action.files.openFolder"
+        },
+        {
+            "keys": "f.f",
+            "name": "Open File",
+            "type": "command",
+            "command": "workbench.action.quickOpen"
+        },
+        {
+            "keys": "f.o",
+            "name": "Open File From explorer",
+            "type": "command",
+            "command": "workbench.action.files.openFile"
+        },
+        {
+            "keys": "f.s",
+            "name": "Find symbol in workspace",
+            "type": "command",
+            "command": "workbench.action.showAllSymbols"
+        },
+        {
+            "keys": "b",
+            "name": "+Bookmarks",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "l",
+                    "name": "List bookmarks",
+                    "type": "command",
+                    "command": "bookmarks.list"
+                },
+                {
+                    "key": "L",
+                    "name": "List from all files",
+                    "type": "command",
+                    "command": "bookmarks.listFromAllFiles"
+                },
+                {
+                    "key": "b",
+                    "name": "Labeled bookmark",
+                    "type": "command",
+                    "command": "bookmarks.toggleLabeled"
+                },
+                {
+                    "key": "B",
+                    "name": "Toggle bookmark",
+                    "type": "command",
+                    "command": "bookmarks.toggle"
+                }
+            ]
+        },
+        {
+            "keys": "h",
+            "name": "+Hop",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "w",
+                    "name": "Start of word",
+                    "type": "commands",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "<leader>",
+                                "<leader>",
+                                "<leader>",
+                                "b",
+                                "d",
+                                "w"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "h",
+                    "name": "Anywhere",
+                    "type": "commands",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "<leader>",
+                                "<leader>",
+                                "<leader>",
+                                "j"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "l",
+                    "name": "Start of line",
+                    "type": "commands",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "<leader>",
+                                "<leader>",
+                                "<leader>",
+                                "b",
+                                "d",
+                                "j",
+                                "k"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "keys": "l",
+            "name": "+Lsp",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "i",
+                    "name": "Insert suggestion",
+                    "type": "command",
+                    "command": "inlineChat.start"
+                },
+                {
+                    "key": "d",
+                    "name": "Peek definition",
+                    "type": "command",
+                    "command": "editor.action.peekDefinition"
+                },
+                {
+                    "key": "e",
+                    "name": "Edit symbol",
+                    "type": "command",
+                    "command": "editor.action.rename"
+                },
+                {
+                    "key": "j",
+                    "name": "Jump to symbol in file",
+                    "type": "command",
+                    "command": "workbench.action.gotoSymbol"
+                },
+                {
+                    "key": "R",
+                    "name": "Search all references",
+                    "type": "command",
+                    "command": "editor.action.referenceSearch.trigger"
+                },
+                {
+                    "key": "r",
+                    "name": "Refactor",
+                    "type": "command",
+                    "command": "editor.action.refactor",
+                    "when": "vim.mode == 'Visual'"
+                },
+                {
+                    "key": "p",
+                    "name": "Search in a project",
+                    "type": "command",
+                    "command": "workbench.action.findInFiles"
+                },
+                {
+                    "key": "l",
+                    "name": "Quick fix",
+                    "type": "command",
+                    "command": "editor.action.quickFix"
+                }
+            ]
+        },
+        {
+            "keys": "s",
+            "name": "+Surround",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "c",
+                    "name": "Change surrounding <char> to <char>",
+                    "type": "commands",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "c",
+                                "s"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "d",
+                    "name": "Delete surrounding <char>",
+                    "type": "commands",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "d",
+                                "s"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "s",
+                    "name": "<motion> <char>",
+                    "type": "commands",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "y",
+                                "s"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "S",
+                    "name": "Surround with <key>",
+                    "type": "commands",
+                    "when": "vim.mode == 'Visual'",
+                    "commands": [
+                        "vim.remap"
+                    ],
+                    "args": [
+                        {
+                            "after": [
+                                "S"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "keys": "v",
+            "name": "+View",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "e",
+                    "name": "Show explorer",
+                    "type": "commands",
+                    "commands": [
+                        "workbench.view.explorer",
+                        "workbench.action.focusActiveEditorGroup"
+                    ]
+                },
+                {
+                    "key": "g",
+                    "name": "Show source control",
+                    "type": "commands",
+                    "commands": [
+                        "workbench.view.scm",
+                        "workbench.action.focusActiveEditorGroup"
+                    ]
+                },
+                {
+                    "key": "p",
+                    "name": "Show problem",
+                    "type": "commands",
+                    "commands": [
+                        "workbench.actions.view.problems",
+                        "workbench.action.focusActiveEditorGroup"
+                    ]
+                },
+                {
+                    "key": "t",
+                    "name": "Show terminal",
+                    "type": "commands",
+                    "commands": [
+                        "workbench.action.terminal.focus",
+                        "workbench.action.focusActiveEditorGroup"
+                    ]
+                },
+                {
+                    "key": "s",
+                    "name": "Search",
+                    "type": "command",
+                    "command": "workbench.action.findInFiles"
+                }
+            ]
+        },
+        {
+            "keys": "P",
+            "name": "List projects",
+            "type": "commands",
+            "commands": [
+                "projectManager.listProjects"
+            ]
+        },
+        // {
+        //     "keys": "c",
+        //     "name": "Comment",
+        //     "type": "commands",
+        //     "when": "vim.mode == 'Visual'",
+        //     "commands": [
+        //         "vim.remap"
+        //     ],
+        //     "args": [
+        //         {
+        //             "after": [
+        //                 "g",
+        //                 "c",
+        //             ]
+        //         }
+        //     ]
+        // },
+        {
+            "keys": "c",
+            "name": "Comment",
+            "type": "commands",
+            // "when": "vim.mode == 'Normal'",
+            "commands": [
+                "vim.remap"
+            ],
+            "args": [
+                {
+                    "after": [
+                        "g",
+                        "c",
+                        "c"
+                    ]
+                }
+            ]
+        },
+        {
+            "keys": "g",
+            "name": "+Git",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "b",
+                    "name": "Checkout",
+                    "type": "command",
+                    "command": "git.checkout"
+                },
+                {
+                    "key": "c",
+                    "name": "Commit",
+                    "type": "command",
+                    "command": "git.commit"
+                },
+                {
+                    "key": "C",
+                    "name": "Commit and push",
+                    "type": "commands",
+                    "commands": [
+                        "ait.commit",
+                        "git.push"
+                    ]
+                },
+                {
+                    "key": "D",
+                    "name": "Delete Branch",
+                    "type": "command",
+                    "command": "git.deleteBranch"
+                },
+                {
+                    "key": "d",
+                    "name": "Open diff",
+                    "type": "command",
+                    "command": "git.openChange"
+                },
+                {
+                    "key": "P",
+                    "name": "Pull",
+                    "type": "command",
+                    "command": "git.pull"
+                },
+                {
+                    "key": "i",
+                    "name": "Init",
+                    "type": "command",
+                    "command": "git.init"
+                },
+                {
+                    "key": "p",
+                    "name": "Push",
+                    "type": "command",
+                    "command": "git.push"
+                },
+                {
+                    "key": "s",
+                    "name": "Status",
+                    "type": "command",
+                    "command": "workbench.view.scm"
+                },
+                {
+                    "key": "S",
+                    "name": "Stage",
+                    "type": "command",
+                    "command": "git.stage"
+                },
+                {
+                    "key": "U",
+                    "name": "Unstage",
+                    "type": "command",
+                    "command": "git.unstage"
+                },
+                {
+                    "key": "g",
+                    "name": "Graph",
+                    "type": "command",
+                    "command": "git-graph.view"
+                },
+                {
+                    "key": "m",
+                    "name": "+merge",
+                    "type": "command",
+                    "command": "git.merge"
+                },
+                {
+                    "key": "M",
+                    "name": "+Merge conflict",
+                    "type": "bindings",
+                    "bindings": [
+                        {
+                            "key": "c",
+                            "name": "Accept current",
+                            "type": "command",
+                            "command": "merge-conflict.accept.current"
+                        },
+                        {
+                            "key": "i",
+                            "name": "Accept incoming",
+                            "type": "command",
+                            "command": "merge-conflict.accept.incoming"
+                        },
+                        {
+                            "key": "B",
+                            "name": "Accept all both",
+                            "type": "command",
+                            "command": "merge-conflict.accept.all-both"
+                        },
+                        {
+                            "key": "C",
+                            "name": "Accept all current",
+                            "type": "command",
+                            "command": "merge-conflict.accept.all-current"
+                        },
+                        {
+                            "key": "I",
+                            "name": "Accept all incoming",
+                            "type": "command",
+                            "command": "merge-conflict.accept.all-incoming"
+                        },
+                        {
+                            "key": "s",
+                            "name": "Accept selection",
+                            "type": "command",
+                            "command": "merge-conflict.accept.selection"
+                        },
+                        {
+                            "key": "k",
+                            "name": "Compare current conflict",
+                            "type": "command",
+                            "command": "merge-conflict.compare"
+                        },
+                        {
+                            "key": "n",
+                            "name": "Next Conflict",
+                            "type": "command",
+                            "command": "merge-conflict.nexta"
+                        },
+                        {
+                            "key": "N",
+                            "name": "Previous Conflict",
+                            "type": "command",
+                            "command": "merge-conflict.previous"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "keys": "d",
+            "position": "-1"
+        },
+        {
+            "keys": "i",
+            "position": "-1"
+        },
+        {
+            "keys": "p",
+            "position": "-1"
+        },
+        {
+            "keys": "r",
+            "position": "-1"
+        },
+        {
+            "keys": "x",
+            "position": "-1"
+        },
+        {
+            "keys": "S",
+            "position": "-1"
+        },
+        {
+            "keys": "t",
+            "position": "-1"
+        },
+        {
+            "keys": "T",
+            "position": "-1"
+        },
+        {
+            "keys": "z",
+            "position": "-1"
+        },
+        {
+            "keys": "1",
+            "position": "-1"
+        },
+        {
+            "keys": "2",
+            "position": "-1"
+        },
+        {
+            "keys": "3",
+            "position": "-1"
+        },
+        {
+            "keys": "4",
+            "position": "-1"
+        },
+        {
+            "keys": "5",
+            "position": "-1"
+        },
+        {
+            "keys": "6",
+            "position": "-1"
+        },
+        {
+            "keys": "7",
+            "position": "-1"
+        },
+        {
+            "keys": "8",
+            "position": "-1"
+        },
+        {
+            "keys": "!",
+            "position": "-1"
+        },
+        {
+            "keys": "/",
+            "position": "-1"
+        },
+        {
+            "keys": "*",
+            "position": "-1"
+        }
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "keyboard.dispatch": "keyCode",
+    "editor.fontFamily": "CaskaydiaCove NF, 'Courier New', monospace",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnType": true
+    },
+    "oneDarkPro.bold": true,
+    "terminal.external.linuxExec": "alacritty",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false,
+        "python": true
+    },
+    "scm.alwaysShowRepositories": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.showUnused": false,
+    "emmet.includeLanguages": {
+        "ejs": "html",
+        "django-html": "html"
+    },
+    "beautify.config": {
+        "html": {
+            "unformatted": [
+                "script"
+            ]
+        }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // "editor.snippetSuggestions": "top",
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.guessTypes": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "oneDarkPro.italic": false,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "background": "#00000000",
+    },
+    "workbench.editorAssociations": {
+        "*.pdf": "pdf.preview"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.enablePreview": false,
+    "editor.guides.bracketPairs": "active",
+    "remote.autoForwardPortsSource": "hybrid",
+    // "python.analysis.autoImportCompletions": true,
+    "python.analysis.addImport.heuristics": true,
+    "css.enabledLanguages": [
+        "html",
+        "django-html"
+    ],
+    // "customizeUI.font.regular": "Arial",
+    // "window.commandCenter": true,
+    "codesnap.transparentBackground": true,
+    "codesnap.showWindowControls": false,
+    "codesnap.showWindowTitle": false,
+    "codesnap.backgroundColor": "#00000000",
+    "codesnap.boxShadow": "#00000000",
+    "password-store": "gnome",
+    "ruff.nativeServer": "on",
+    "telemetry.telemetryLevel": "off",
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "ruff.lint.preview": true,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "makefile.configureOnOpen": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "apklab.apkSignerPath": "/home/kippster/.apklab/uber-apk-signer-1.3.0.jar",
+    "apklab.apktoolPath": "/home/kippster/.apklab/apktool_2.9.3.jar",
+    "apklab.jadxDirPath": "/home/kippster/.apklab/jadx-1.4.7",
+}

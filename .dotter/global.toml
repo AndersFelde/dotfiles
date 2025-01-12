@@ -5,7 +5,7 @@ depends = ["desktop", "terminal"]
 depends = ["shell"]
 
 [desktop]
-depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord", "xinitrc"]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord", "xinitrc", "code"]
 
 [xsettingsd.files]
 xsettingsd = "~/.config/xsettingsd/xsettingsd.conf"
@@ -65,3 +65,7 @@ ssh = "~/.ssh/config"
 
 [discord.files]
 discord = "~/.config/discord/settings.json"
+
+[code.files]
+code_settings = "~/.config/Code/User/settings.json"
+code_keybindings = "~/.config/Code/User/keybindings.json"

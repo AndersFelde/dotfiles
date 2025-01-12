@@ -66,4 +66,4 @@ setw -g pane-active-border-style fg=white,bg=#0e1019
 # setw -g window-style fg=colour10,bg=colour8
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
+run '/usr/share/tmux-plugin-manager/tpm'

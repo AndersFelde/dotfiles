@@ -28,7 +28,7 @@ xinitrc = "~/.xinitrc"
 alacritty = "~/.config/alacritty/alacritty.toml"
 
 [shell]
-depends = ["neofetch"]
+depends = ["neofetch", "zed"]
 
 [shell.files]
 tmux = "~/.tmux.conf"
@@ -69,3 +69,7 @@ discord = "~/.config/discord/settings.json"
 [code.files]
 code_settings = "~/.config/Code/User/settings.json"
 code_keybindings = "~/.config/Code/User/keybindings.json"
+
+[zed.files]
+zed_settings = "~/.config/zed/settings.json"
+zed_keymap = "~/.config/zed/keymap.json"

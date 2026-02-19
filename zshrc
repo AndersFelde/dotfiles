@@ -26,15 +26,15 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.utf8
 export LANG=en_US.UTF-8
-export SUDO_EDITOR=lvim
-export EDITOR=lvim
+export SUDO_EDITOR=nvim
+export EDITOR=nvim
 #export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export PATH="$PATH:$HOME/.local/bin/"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.cargo/bin/"
 export BROWSER=brave
 
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
-alias vim="lvim"
+alias vim="nvim"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias minicom="minicom -con"
 alias qtile_log="cat ~/.local/share/qtile/qtile.log"

@@ -73,3 +73,4 @@ code_keybindings = "~/.config/Code/User/keybindings.json"
 [zed.files]
 zed_settings = "~/.config/zed/settings.json"
 zed_keymap = "~/.config/zed/keymap.json"
+zed_tasks = "~/.config/zed/tasks.json"

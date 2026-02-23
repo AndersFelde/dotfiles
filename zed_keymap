@@ -7,18 +7,22 @@
 // from the command palette.
 [
   {
-    "context": "Workspace && !Editor",
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-/": "terminal_panel::Toggle",
-      "tab": "tab_switcher::ToggleAll",
+      // "tab": "tab_switcher::ToggleAll",
       "alt-l": "vim::ResizePaneRight",
       "alt-h": "vim::ResizePaneLeft",
       "alt-j": "vim::ResizePaneDown",
       "alt-k": "vim::ResizePaneUp",
+    },
+  },
+  {
+    "context": "Workspace && !Editor",
+    "bindings": {
       "l": "menu::Confirm",
     },
   },
@@ -60,18 +64,20 @@
       "space f n": "workspace::NewFile",
       "space f o": "workspace::OpenFiles",
       "space f O": "workspace::Open",
+      "space f s": "outline::Toggle",
+      "space f S": "project_symbols::Toggle",
 
       "space l f": "editor::Format",
       "space l d": "editor::GoToDefinitionSplit",
       "space l R": "editor::FindAllReferences",
       "space l e": "editor::Rename",
-      "space l s": "outline::Toggle",
-      "space l S": "project_symbols::Toggle",
       "space l k": "editor::Hover",
       "space l l": "editor::ToggleCodeActions",
 
       "space d d": "diagnostics::DeployCurrentFile",
       "space d D": "diagnostics::Deploy",
+      "space d n": "editor::GoToDiagnostic",
+      "space d p": "editor::GoToPreviousDiagnostic",
 
       "space w w": "pane::CloseActiveItem",
       "space w W": "pane::CloseAllItems",
@@ -82,16 +88,19 @@
         { "task_name": "LazyGit", "reveal_target": "center" },
       ],
       "space g g": "git_panel::ToggleFocus",
+      "space g b": "git::Branch",
       "space g c": [
         "action::Sequence",
         [
           ["git::StageAll", 0],
-          ["git::Commit", 0]
-        ]
+          ["git::Commit", 0],
+        ],
       ],
 
       "space k f": "editor::Fold",
+      "space k F": "editor::FoldAll",
       "space k u": "editor::UnfoldLines",
+      "space k U": "editor::UnfoldAll",
 
       "space i i": "assistant::InlineAssist",
       "space i c": "agent::ToggleFocus",
@@ -106,14 +115,14 @@
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       "s": "vim::PushSneak",
-      "shift-s": "vim::PushSneakBackward"
-    }
+      "shift-s": "vim::PushSneakBackward",
+    },
   },
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "shift-s": "vim::PushAddSurrounds"
-    }
+      "shift-s": "vim::PushAddSurrounds",
+    },
   },
   {
     "context": "Editor && mode == full && menu",
@@ -187,6 +196,8 @@
       "l": "project_panel::OpenPermanent",
       "s": "project_panel::OpenSplitVertical",
       "S": "project_panel::OpenSplitHorizontal",
+      "G": "project_panel::ToggleHideGitIgnore",
+      "H": "project_panel::ToggleHideHidden",
     },
   },
   {
@@ -201,6 +212,12 @@
       "ctrl-w": null,
       "ctrl-w w": "pane::CloseActiveItem",
       "ctrl-w W": "pane::CloseAllItems",
+    },
+  },
+  {
+    "context": "Diagnostics",
+    "bindings": {
+      "space d w": "diagnostics::ToggleWarnings",
     },
   },
 ]

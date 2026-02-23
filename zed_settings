@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "hide_gitignore": false,
+    "hide_hidden": false
+  },
   "agent": {
     "profiles": {
       "test": {
@@ -18,7 +22,7 @@
     },
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini",
+      "model": "gemini-3.1-pro-preview",
       "enable_thinking": false
     },
     "favorite_models": [],
@@ -50,6 +54,8 @@
   ],
   "vim_mode": true,
   "terminal": {
+    "minimum_contrast": 38.0,
+    "shell": "system",
     "font_family": "CaskaydiaCove NF",
   },
   "telemetry": {
@@ -124,4 +130,5 @@
       },
     ],
   },
+  "search_on_input": true
 }

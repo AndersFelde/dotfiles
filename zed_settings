@@ -9,7 +9,7 @@
 {
   "project_panel": {
     "hide_gitignore": false,
-    "hide_hidden": false
+    "hide_hidden": false,
   },
   "agent": {
     "profiles": {
@@ -17,13 +17,13 @@
         "name": "test",
         "tools": {},
         "enable_all_context_servers": false,
-        "context_servers": {}
-      }
+        "context_servers": {},
+      },
     },
     "default_model": {
       "provider": "copilot_chat",
       "model": "gemini-3.1-pro-preview",
-      "enable_thinking": false
+      "enable_thinking": false,
     },
     "favorite_models": [],
     "default_profile": "ask",
@@ -54,7 +54,7 @@
   ],
   "vim_mode": true,
   "terminal": {
-    "minimum_contrast": 38.0,
+    "minimum_contrast": 37.0,
     "shell": "system",
     "font_family": "CaskaydiaCove NF",
   },
@@ -130,5 +130,16 @@
       },
     ],
   },
-  "search_on_input": true
+  "auto_signature_help": true,
+  "document_symbols": "on",
+  "search": {
+    "search_on_input": true,
+  },
+  "use_smartcase_search": true,
+  "search_on_input": true,
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "all",
+  },
 }

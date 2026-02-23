@@ -109,6 +109,7 @@
 
       "space e": "project_panel::ToggleFocus",
       "space c": "editor::ToggleComments",
+      "space z": "workspace::ToggleZoom",
     },
   },
   {

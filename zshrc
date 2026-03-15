@@ -26,11 +26,10 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.utf8
 export LANG=en_US.UTF-8
-export SUDO_EDITOR=vim
-export EDITOR=vim
+export SUDO_EDITOR=nvim
+export EDITOR=nvim
 #export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export PATH="$PATH:$HOME/.local/bin/"
-export PATH="$PATH:$HOME/.dotnet/tools"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.cargo/bin/"
 export BROWSER=brave
 
 alias grep="grep --color=auto"

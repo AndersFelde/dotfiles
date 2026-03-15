@@ -1,0 +1,40 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+//
+// Example:
+[
+    {
+        "label": "LazyGit",
+        "command": "lazygit",
+        "shell": {
+            "program": "sh"
+        },
+        "hide": "on_success",
+        "reveal_target": "center",
+        "show_summary": false,
+        "show_command": false,
+        "allow_concurrent_runs": true,
+        "use_new_terminal": true
+    },
+    {
+        "label": "file_finder",
+        "command": "zed \"$(tv files)\"",
+        "shell": {
+            "program": "sh"
+        },
+        "hide": "always",
+        "allow_concurrent_runs": true,
+        "use_new_terminal": true,
+        "reveal_target": "center",
+    },
+    {
+        "label": "fulltext_search",
+        "command": "zed \"$(tv text)\"",
+        "hide": "always",
+        "shell": {
+            "program": "sh"
+        },
+        "allow_concurrent_runs": true,
+        "use_new_terminal": true,
+        "reveal_target": "center",
+    }
+]

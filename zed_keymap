@@ -1,0 +1,224 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-/": "terminal_panel::Toggle",
+      // "tab": "tab_switcher::ToggleAll",
+      "alt-l": "vim::ResizePaneRight",
+      "alt-h": "vim::ResizePaneLeft",
+      "alt-j": "vim::ResizePaneDown",
+      "alt-k": "vim::ResizePaneUp",
+    },
+  },
+  {
+    "context": "Workspace && !Editor",
+    "bindings": {
+      "l": "menu::Confirm",
+    },
+  },
+  {
+    // "context": "VimControl && Editor && mode == full",
+    "context": "VimControl && Editor",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-/": "terminal_panel::Toggle",
+      "ctrl-H": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" },
+      ],
+      "ctrl-L": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" },
+      ],
+      "space q": "workspace::CloseWindow",
+
+      "K": ["workspace::SendKeystrokes", "5 k"],
+      "J": ["workspace::SendKeystrokes", "5 j"],
+      "H": ["workspace::SendKeystrokes", "b"],
+      "L": ["workspace::SendKeystrokes", "w"],
+      "tab": "tab_switcher::ToggleAll",
+      "shift-tab": "tab_switcher::ToggleAll",
+      "ctrl-w w": "pane::CloseActiveItem",
+      "ctrl-w W": "pane::CloseAllItems",
+      "space": null,
+
+      "space space": "command_palette::Toggle",
+
+      "space f t": "tab_switcher::ToggleAll",
+      "space f f": "file_finder::Toggle",
+      "space f w": "pane::DeploySearch",
+      "space f p": "projects::OpenRecent",
+      "space f n": "workspace::NewFile",
+      "space f o": "workspace::OpenFiles",
+      "space f O": "workspace::Open",
+      "space f s": "outline::Toggle",
+      "space f S": "project_symbols::Toggle",
+
+      "space l f": "editor::Format",
+      "space l d": "editor::GoToDefinitionSplit",
+      "space l R": "editor::FindAllReferences",
+      "space l e": "editor::Rename",
+      "space l k": "editor::Hover",
+      "space l l": "editor::ToggleCodeActions",
+
+      "space d d": "diagnostics::DeployCurrentFile",
+      "space d D": "diagnostics::Deploy",
+      "space d n": "editor::GoToDiagnostic",
+      "space d p": "editor::GoToPreviousDiagnostic",
+
+      "space w w": "pane::CloseActiveItem",
+      "space w W": "pane::CloseAllItems",
+
+      "space g d": "git::Diff",
+      "space g G": [
+        "task::Spawn",
+        { "task_name": "LazyGit", "reveal_target": "center" },
+      ],
+      "space g g": "git_panel::ToggleFocus",
+      "space g b": "git::Branch",
+      "space g c": [
+        "action::Sequence",
+        [
+          ["git::StageAll", 0],
+          ["git::Commit", 0],
+        ],
+      ],
+
+      "space k f": "editor::Fold",
+      "space k F": "editor::FoldAll",
+      "space k u": "editor::UnfoldLines",
+      "space k U": "editor::UnfoldAll",
+
+      "space i i": "assistant::InlineAssist",
+      "space i c": "agent::ToggleFocus",
+      "space i s": "agent::AddSelectionToThread",
+      "space i a": "agent::OpenAddContextMenu",
+
+      "space e": "project_panel::ToggleFocus",
+      "space c": "editor::ToggleComments",
+      "space z": "workspace::ToggleZoom",
+    },
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "s": "vim::PushSneak",
+      "shift-s": "vim::PushSneakBackward",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-s": "vim::PushAddSurrounds",
+    },
+  },
+  {
+    "context": "Editor && mode == full && menu",
+    "bindings": {
+      "alt-j": "editor::ContextMenuNext",
+      "alt-k": "editor::ContextMenuPrevious",
+    },
+  },
+
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "tab": "editor::Indent",
+      "shift-tab": "editor::Outdent",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "tab": null,
+    },
+  },
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-f": "buffer_search::Deploy", // vim default: page down
+      "ctrl-c": "editor::Copy", // vim default: return to normal mode
+      "ctrl-x": "editor::Cut", // vim default: decrement
+      "ctrl-a": "editor::SelectAll", // vim default: increment
+      "ctrl-y": "editor::Undo", // vim default: line up
+      "ctrl-o": "workspace::Open", // vim default: go back
+      "ctrl-s": "workspace::Save", // vim default: show signature
+    },
+  },
+  {
+    "context": "Editor && !menu && vim_mode==insert",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+    },
+  },
+
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "space": "menu::Confirm",
+      "backspace": "tab_switcher::CloseSelectedItem",
+      "shift-space": "tab_switcher::CloseSelectedItem",
+    },
+  },
+  {
+    "context": "GitPanel && !Editor",
+    "bindings": {
+      "a": "git::StageAll",
+      "A": "git::UnstageAll",
+      "c": "git::Commit",
+      "p": "git::Pull",
+      "P": "git::Push",
+    },
+  },
+  {
+    "context": "ProjectPanel && !Editor",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "y": "project_panel::Copy",
+      "Y": "workspace::CopyPath",
+      "x": "project_panel::Cut",
+      "p": "project_panel::Paste",
+      "l": "project_panel::OpenPermanent",
+      "s": "project_panel::OpenSplitVertical",
+      "S": "project_panel::OpenSplitHorizontal",
+      "G": "project_panel::ToggleHideGitIgnore",
+      "H": "project_panel::ToggleHideHidden",
+    },
+  },
+  {
+    "context": "GitDiff && !Editor",
+    "bindings": {
+      "space g r": "git::Restore",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-w": null,
+      "ctrl-w w": "pane::CloseActiveItem",
+      "ctrl-w W": "pane::CloseAllItems",
+    },
+  },
+  {
+    "context": "Diagnostics",
+    "bindings": {
+      "space d w": "diagnostics::ToggleWarnings",
+    },
+  },
+]

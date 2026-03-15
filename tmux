@@ -16,12 +16,15 @@ bind r source-file ~/.tmux.conf
 set-window-option -g mode-keys vi
 bind Enter copy-mode # enter copy mode
 bind -T copy-mode-vi v send -X begin-selection
-bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel
+#bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel
+bind -T copy-mode-vi y send-keys -X copy-selection -x
 bind -T copy-mode-vi H send b
 bind -T copy-mode-vi L send w
 bind -T copy-mode-vi K send Pageup
 bind -T copy-mode-vi J send Pagedown
 bind -T copy-mode-vi Escape send q
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-selection -x
+
 
 
 #nvim conf

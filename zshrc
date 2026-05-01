@@ -31,6 +31,7 @@ export EDITOR=nvim
 #export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export PATH="$PATH:$HOME/.local/bin/:$HOME/.cargo/bin/"
 export BROWSER=brave
+export npm_config_prefix="$HOME/.local"
 
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
@@ -43,6 +44,7 @@ alias compile_asm='gcc -S -fno-asynchronous-unwind-tables'
 alias ghidra_auto='python /opt/013brumm-tools/pwn/ghidra/auto_ghidra.py'
 alias auto_ghidra='python /opt/013brumm-tools/pwn/ghidra/auto_ghidra.py'
 alias rebuild_packages='paru -S --rebuild --noconfirm $(checkrebuild | awk '{print $2}' | xargs -r)'
+alias zed='zeditor'
 
 command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
 command -v lsd > /dev/null && alias tree="lsd --tree"
@@ -103,3 +105,13 @@ fzf-cd-widget() {
 }
 zle     -N    fzf-cd-widget
 bindkey '^f' fzf-cd-widget
+
+if grep -q "microsoft" /proc/version 2>/dev/null; then
+    # WSL2 GPU Acceleration
+    # Force OpenGL to use D3D12 (hardware acceleration via WSL)
+    export GALLIUM_DRIVER=d3d12
+    # Force Video Acceleration to use D3D12
+    export LIBVA_DRIVER_NAME=d3d12
+    # Force Vulkan to use the Dozen (d3d12) driver, avoiding llvmpipe fallback
+    export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/dzn_icd.x86_64.json
+fi

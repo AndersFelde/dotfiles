@@ -7,27 +7,46 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent_servers": {
+    "github-copilot": {
+      "type": "registry",
+    },
+    "opencode": {
+      "type": "registry",
+    },
+    "pi": {
+      "type": "custom",
+      "command": "npx",
+      "args": ["-y", "pi-acp"],
+      "env": {
+        "PI_ACP_STARTUP_INFO": "true", // optional, "true" by default
+      },
+    },
+  },
   "project_panel": {
+    "dock": "left",
     "hide_gitignore": false,
     "hide_hidden": false,
   },
   "agent": {
-    "profiles": {
-      "test": {
-        "name": "test",
-        "tools": {},
-        "enable_all_context_servers": false,
-        "context_servers": {},
-      },
-    },
+    "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gemini-3.1-pro-preview",
+      "model": "gpt-5.2-codex",
       "enable_thinking": false,
     },
     "favorite_models": [],
-    "default_profile": "ask",
+    "default_profile": "write",
     "model_parameters": [],
+  },
+  "edit_predictions": {
+    "provider": "copilot",
   },
   "inlay_hints": {
     "enabled": true,
@@ -39,6 +58,7 @@
   },
   "diff_view_style": "split",
   "git_panel": {
+    "dock": "left",
     "tree_view": true,
   },
   "wsl_connections": [
@@ -56,7 +76,7 @@
   "terminal": {
     "minimum_contrast": 37.0,
     "shell": "system",
-    "font_family": "CaskaydiaCove NF",
+    "font_family": "CaskaydiaCove Nerd Font",
   },
   "telemetry": {
     "diagnostics": false,
@@ -130,7 +150,7 @@
       },
     ],
   },
-  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
   "document_symbols": "on",
   "search": {
     "search_on_input": true,
@@ -142,4 +162,6 @@
     "git_status": true,
     "show_diagnostics": "all",
   },
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
 }

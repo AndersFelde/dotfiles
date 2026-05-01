@@ -5,7 +5,7 @@ depends = ["desktop", "terminal"]
 depends = ["shell"]
 
 [desktop]
-depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord", "xinitrc", "code"]
+depends = ["picom", "dunst", "alacritty", "font", "gtk3", "touchegg",  "flameshot", "ssh", "xsettingsd", "discord", "xinitrc", "code", "zed"]
 
 [xsettingsd.files]
 xsettingsd = "~/.config/xsettingsd/xsettingsd.conf"
@@ -28,7 +28,7 @@ xinitrc = "~/.xinitrc"
 alacritty = "~/.config/alacritty/alacritty.toml"
 
 [shell]
-depends = ["neofetch", "zed"]
+depends = ["neofetch"]
 
 [shell.files]
 tmux = "~/.tmux.conf"

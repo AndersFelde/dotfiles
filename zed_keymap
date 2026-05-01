@@ -45,8 +45,9 @@
       ],
       "space q": "workspace::CloseWindow",
 
-      "K": ["workspace::SendKeystrokes", "5 k"],
-      "J": ["workspace::SendKeystrokes", "5 j"],
+      "K": ["editor::MoveUpByLines", {"lines": 5}],
+      "shift-j": ["editor::MoveDownByLines", {"lines": 5}],
+      // "shift-j": null,
       "H": ["workspace::SendKeystrokes", "b"],
       "L": ["workspace::SendKeystrokes", "w"],
       "tab": "tab_switcher::ToggleAll",
@@ -68,7 +69,7 @@
       "space f S": "project_symbols::Toggle",
 
       "space l f": "editor::Format",
-      "space l d": "editor::GoToDefinitionSplit",
+      "space l d": "editor::GoToDefinition",
       "space l R": "editor::FindAllReferences",
       "space l e": "editor::Rename",
       "space l k": "editor::Hover",

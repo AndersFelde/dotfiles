@@ -45,7 +45,7 @@
     "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
         "editor.defaultFormatter": "monosans.djlint"
     },
-    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.typeCheckingMode": "basic",
     "projectManager.git.baseFolders": [
         "C:\\Users\\kippster\\Desktop",
         "\\\\wsl.localhost\\Arch\\home\\kippster\\code",
@@ -430,6 +430,13 @@
                     "name": "Quick fix",
                     "type": "command",
                     "command": "editor.action.quickFix"
+                },
+
+                {
+                    "key": "f",
+                    "name": "Format document",
+                    "type": "command",
+                    "command": "editor.action.formatDocument"
                 }
             ]
         },
@@ -839,7 +846,7 @@
     "oneDarkPro.bold": true,
     "terminal.external.linuxExec": "alacritty",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": true,
         "scminput": false,
@@ -938,4 +945,20 @@
     "apklab.apkSignerPath": "/home/kippster/.apklab/uber-apk-signer-1.3.0.jar",
     "apklab.apktoolPath": "/home/kippster/.apklab/apktool_2.9.3.jar",
     "apklab.jadxDirPath": "/home/kippster/.apklab/jadx-1.4.7",
+    "workbench.colorCustomizations": {
+        "[One Dark Pro Darker]": {
+            "editorInlayHint.background": "#00000000",
+            "editorInlayHint.foreground": "#7F848E"
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "[One Dark Pro Darker]": {
+            "rules": {
+                "attributeBracket.attribute": "#d19a66",
+                "builtinAttribute.attribute": "#d19a66"
+            }
+        }
+    },
+    "github.copilot.nextEditSuggestions.enabled": true
 }

@@ -30,6 +30,7 @@ export SUDO_EDITOR=nvim
 export EDITOR=nvim
 #export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export PATH="$PATH:$HOME/.local/bin/:$HOME/.cargo/bin/"
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 export BROWSER=brave
 
 alias grep="grep --color=auto"
@@ -43,6 +44,7 @@ alias compile_asm='gcc -S -fno-asynchronous-unwind-tables'
 alias ghidra_auto='python /opt/013brumm-tools/pwn/ghidra/auto_ghidra.py'
 alias auto_ghidra='python /opt/013brumm-tools/pwn/ghidra/auto_ghidra.py'
 alias rebuild_packages='paru -S --rebuild --noconfirm $(checkrebuild | awk '{print $2}' | xargs -r)'
+alias zed='zeditor'
 
 command -v lsd > /dev/null && alias ls="lsd --group-dirs first"
 command -v lsd > /dev/null && alias tree="lsd --tree"

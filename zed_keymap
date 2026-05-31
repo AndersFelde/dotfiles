@@ -45,8 +45,8 @@
       ],
       "space q": "workspace::CloseWindow",
 
-      "K": ["workspace::SendKeystrokes", "5 k"],
-      "J": ["workspace::SendKeystrokes", "5 j"],
+      "K": [ "editor::MoveUpByLines",     { "lines": 5 } ],
+      "J": [ "editor::MoveDownByLines",     { "lines": 5 } ],
       "H": ["workspace::SendKeystrokes", "b"],
       "L": ["workspace::SendKeystrokes", "w"],
       "tab": "tab_switcher::ToggleAll",
@@ -123,6 +123,11 @@
     "context": "vim_mode == visual",
     "bindings": {
       "shift-s": "vim::PushAddSurrounds",
+      "J": ["workspace::SendKeystrokes", "5 j"],
+      "K": ["workspace::SendKeystrokes", "5 k"],
+      "tab": "editor::Indent",
+      "shift-tab": "editor::Outdent",
+
     },
   },
   {
@@ -130,14 +135,6 @@
     "bindings": {
       "alt-j": "editor::ContextMenuNext",
       "alt-k": "editor::ContextMenuPrevious",
-    },
-  },
-
-  {
-    "context": "vim_mode == visual",
-    "bindings": {
-      "tab": "editor::Indent",
-      "shift-tab": "editor::Outdent",
     },
   },
   {

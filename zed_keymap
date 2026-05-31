@@ -68,7 +68,7 @@
       "space f S": "project_symbols::Toggle",
 
       "space l f": "editor::Format",
-      "space l d": "editor::GoToDefinitionSplit",
+      "space l d": "editor::GoToDefinition",
       "space l R": "editor::FindAllReferences",
       "space l e": "editor::Rename",
       "space l k": "editor::Hover",
@@ -83,10 +83,11 @@
       "space w W": "pane::CloseAllItems",
 
       "space g d": "git::Diff",
-      "space g G": [
-        "task::Spawn",
-        { "task_name": "LazyGit", "reveal_target": "center" },
-      ],
+      "space g G": "git_graph::Open",
+      // "space g G": [
+      //   "task::Spawn",
+      //   { "task_name": "LazyGit", "reveal_target": "center" },
+      // ],
       "space g g": "git_panel::ToggleFocus",
       "space g b": "git::Branch",
       "space g c": [
@@ -107,6 +108,11 @@
       "space i s": "agent::AddSelectionToThread",
       "space i a": "agent::OpenAddContextMenu",
 
+      "space b b": "editor::ToggleBookmark",
+      "space b B": "editor::ViewBookmarks",
+      "space b n": "editor::GoToNextBookmark",
+      "space b p": "editor::GoToPreviousBookmark",
+
       "space e": "project_panel::ToggleFocus",
       "space c": "editor::ToggleComments",
       "space z": "workspace::ToggleZoom",
@@ -115,7 +121,7 @@
   {
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "s": "vim::PushSneak",
+      "s": "vim::HelixJumpToWord",
       "shift-s": "vim::PushSneakBackward",
     },
   },

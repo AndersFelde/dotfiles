@@ -42,8 +42,11 @@
       "enable_thinking": true,
     },
     "favorite_models": [],
-    "default_profile": "ask",
+    "default_profile": "write",
     "model_parameters": [],
+  },
+  "edit_predictions": {
+    "provider": "copilot",
   },
   "inlay_hints": {
     "enabled": true,
@@ -73,7 +76,7 @@
   "terminal": {
     "minimum_contrast": 37.0,
     "shell": "system",
-    "font_family": "CaskaydiaCove NF",
+    "font_family": "CaskaydiaCove Nerd Font",
   },
   "telemetry": {
     "diagnostics": false,
@@ -148,6 +151,7 @@
     ],
   },
   "auto_signature_help": false,
+  "show_signature_help_after_edits": true,
   "document_symbols": "on",
   "search": {
     "search_on_input": true,
@@ -159,4 +163,6 @@
     "git_status": true,
     "show_diagnostics": "all",
   },
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
 }
